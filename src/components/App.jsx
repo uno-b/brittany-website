@@ -14,17 +14,15 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setContact({ ...contactData });
-    setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, contact, footer }}>
+    <PortfolioProvider value={{ hero, about, contact }}>
       <Navbar />
       <Hero />
       <About />
