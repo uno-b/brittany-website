@@ -1,0 +1,52 @@
+.services-wrapper {
+  margin-bottom: 20rem;
+
+  @include respond(tab-land) {
+    margin-bottom: 5rem;
+  }
+
+  p {
+    margin: 7rem auto;
+    font-size: 2rem;
+    background-color: transparent;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    p {
+      margin: 3rem;
+      width: 22vw;
+      margin: 7rem auto;
+      height: 45rem;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      background-color: $primary-color;
+      border-radius: 8px;
+      color: white;
+
+      @include respond(tab-land) {
+        font-size: 1.7rem;
+      }
+      @include respond(tab-port) {
+        font-size: 2rem;
+        width: 70%;
+        height: auto;
+        margin: 2rem;
+      }
+      @include respond(phone) {
+        width: 80%;
+      }
+      @include respond(phone-xs) {
+        width: 80%;
+      }
+    }
+  }
+}
